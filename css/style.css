@@ -19,22 +19,36 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px;
 
     background-color: #003366;
     color: white;
+
+    padding: 20px 50px;
+
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
 
     list-style: none;
+
+    gap: 25px;
 }
 
 nav a {
     color: white;
+
     text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
 }
 
 /*======= Estructura Principal con GRID =======*/
@@ -112,7 +126,7 @@ button {
 
 /*======= Galeria =======*/
 
-.galery {
+.galeria {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -120,14 +134,22 @@ button {
     gap: 20px;
 }
 
-.galery img {
+.galeria img {
     width: 100%;
 
-    height: 250px:auto
+    height: 250px;
 
     object-fit: cover;
 
     border-radius: 10px;
+
+    object-fit: cover;
+
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
 }
 
 /*======= Footer =======*/
