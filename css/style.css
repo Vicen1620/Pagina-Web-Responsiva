@@ -262,7 +262,7 @@ footer {
 
 .servicios {
     
-    text-aling: center;
+    text-align: center;
 }
 
 .cards {
@@ -297,4 +297,193 @@ footer {
     margin-bottom: 15px;
 
     color: #003366;
+}
+
+.about {
+    
+    padding: 80px 10%;
+}
+
+.about.container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+    
+}
+
+.about-text {
+    flex: 1;
+
+}
+
+.about-text h2 {
+    
+    font-size: 2.2rem;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    
+    margin-bottom: 20px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+
+}
+
+.about-image img {
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.galeria {
+    
+    padding: 80px 10%;
+    background:#f7f7f7;
+}
+
+.galeria h2 {
+    
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    font-size: 2.2rem;
+}
+
+.galeria-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 20px;
+}
+
+.galeria-item {
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.galeria-item img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    transition: transform 0.4s;
+}
+
+galeria-item:hover img {
+    transform: scale(1.08);
+}
+
+.contacto{
+    padding:80px 10%;
+}
+
+
+.contacto-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+
+/* Información */
+
+.contacto-info{
+    flex:1;
+}
+
+
+.contacto-info h2{
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+
+.contacto-info p{
+    margin-bottom:15px;
+    color:#555;
+    line-height:1.6;
+}
+
+
+
+/* Formulario */
+
+.formulario{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+.formulario label{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    font-weight:bold;
+}
+
+
+.formulario input,
+.formulario textarea{
+
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+
+}
+
+
+.formulario textarea{
+
+    height:150px;
+    resize:none;
+
+}
+
+
+/* Botón */
+
+.formulario button{
+
+    padding:15px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+
+}
+
+
+.formulario button:hover{
+
+    background:#0056b3;
+
 }
