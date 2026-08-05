@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFD700;
+    color: #00bfff;
 }
 
 /*======= Estructura Principal con GRID =======*/
@@ -486,4 +486,93 @@ galeria-item:hover img {
 
     background:#0056b3;
 
+}
+
+footer {
+    background:#333;
+    color:white;
+    padding:30px 20px;
+}
+
+.footer-contenido {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin: auto;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: #00bfff;
+}
+
+
+
+/*Responsive para tablets */
+
+@media (max-width:768px){
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+}
+
+.servicios {
+    grid-template-columns: 1fr;;
+}
+
+.sobre {
+    flex-direction: column;
+    text-align: center;
+}
+
+.galeria {
+    grid-template-columns: repeat(2,1fr);
+}
+
+contacto form {
+    width: 100%;
+}
+
+}
+
+/*Responsive para moviles */
+
+@media (max-width:480px){
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+       font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .hero{
+        padding: 40px 20px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
