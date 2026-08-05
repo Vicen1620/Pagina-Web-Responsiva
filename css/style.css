@@ -152,57 +152,7 @@ button {
     transform: scale(1.05);
 }
 
-/*======= Footer =======*/
-footer {
-
-    text-align: center;
-
-    padding: 20px;
-
-    background-color: #003366;
-
-    color: white;
-}
-
-/*======= Diseño responsivo =======*/
-
-/*======= Tablet =======*/
-
-@media (max-width: 768px) {
-
-    header {
-
-        flex-direction: column;
-
-        gap: 20px;
-    }
-
-    .galery {
-
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .cards {
-
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Smartphone */
-
-@media (max-width: 480px) {
-
-    nav ul {
-
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    .galery {
-
-        grid-template-columns: 1fr;
-    }
+ 
 
 .hero {
         min-height: 400px;
@@ -256,7 +206,6 @@ footer {
         transform: scale(1.05);
     }
 
-} 
 
 /*======= Servicios =======*/
 
@@ -299,12 +248,10 @@ footer {
     color: #003366;
 }
 
-.about {
-    
-    padding: 80px 10%;
-}
 
-.about.container {
+.about {
+
+    padding: 80px 10%;
 
     display: flex;
 
@@ -390,7 +337,7 @@ footer {
     transition: transform 0.4s;
 }
 
-galeria-item:hover img {
+.galeria-item:hover img {
     transform: scale(1.08);
 }
 
@@ -488,10 +435,13 @@ galeria-item:hover img {
 
 }
 
+/*=======footer========*/
+
 footer {
     background:#333;
     color:white;
     padding:30px 20px;
+    text-align:center;
 }
 
 .footer-contenido {
@@ -527,26 +477,38 @@ footer {
         text-align: center;
 }
 
-.servicios {
-    grid-template-columns: 1fr;;
-}
 
-.sobre {
+.about {
     flex-direction: column;
     text-align: center;
 }
 
-.galeria {
-    grid-template-columns: repeat(2,1fr);
+.formulario {
+    width:100%;
 }
 
-contacto form {
-    width: 100%;
-}
+header {
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .galeria {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
 
 }
 
-/*Responsive para moviles */
+/*Responsive para Smartphone */
 
 @media (max-width:480px){
 
@@ -561,6 +523,7 @@ contacto form {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
     }
 
     .galeria {
@@ -575,4 +538,5 @@ contacto form {
         flex-direction: column;
         gap: 20px;
     }
+
 }
