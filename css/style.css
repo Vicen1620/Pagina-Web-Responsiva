@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -132,6 +139,10 @@ button {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
+
+    padding: 80px 10%;
+    
+    background:#f7f7f7;
 }
 
 .galeria img {
@@ -172,7 +183,7 @@ button {
 
     }    
 
-.herotext {
+.hero-text {
         max-width: 700px;   
 
 }
@@ -205,6 +216,25 @@ button {
         
         transform: scale(1.05);
     }
+
+
+/*======= Botones generales =======*/
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #00bfff;
+    transform: scale(1.05);
+}    
 
 
 /*======= Servicios =======*/
@@ -248,10 +278,16 @@ button {
     color: #003366;
 }
 
-
 .about {
 
+    
     padding: 80px 10%;
+
+}    
+
+
+.about .container {
+
 
     display: flex;
 
@@ -297,11 +333,6 @@ button {
     border-radius: 10px;
 }
 
-.galeria {
-    
-    padding: 80px 10%;
-    background:#f7f7f7;
-}
 
 .galeria h2 {
     
