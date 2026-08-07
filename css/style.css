@@ -571,3 +571,7 @@ header {
     }
 
 }
+
+.oculto{
+    display: none;
+}
